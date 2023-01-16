@@ -9,5 +9,15 @@
                 <button mat-raised-button color="primary" (click)="passData(product)" class="m-2">Buy Product</button>
             </div>
         </div>
+        <mat-paginator
+        (page)="handlePageEvent($event)"
+        [length]="length"
+        [pageSize]="pageSize"
+        [showFirstLastButtons]="showFirstLastButtons"
+        [pageSizeOptions]="pageSizeOptions"
+        [pageIndex]="pageIndex"
+        aria-label="Select page">
+    </mat-paginator>
     </div>
+  
 </div>

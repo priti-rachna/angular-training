@@ -10,6 +10,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { SingleProductComponentComponent } from './components/single-product-component/single-product-component.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
