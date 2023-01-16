@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  productDetail: any = null;
+  constructor(){
+
+  }
+  getData(event:any){
+     console.log(event);
+  }
 }
